@@ -5,24 +5,15 @@ export function Home() {
   const isPresent = useIsPresent();
   return (
     <article>
-      <h1
-        style={
-          {
-            "--base-width": "24vw",
-            top: "-18vw",
-            letterSpacing: "-1.4vw",
-            x: "-50%"
-          } as any
-        }
-      >
+      <h1>
         Galleries
       </h1>
       <ul>
-        <li>
+        <li className="relative transition duration-300 ease-in-out underline-animation">
           <Link to="/coffee">A Programers Best Friend</Link>
         </li>
-        <li>
-          <Link to="/london">White lines of Canary Wharf</Link>
+        <li className="relative transition duration-300 ease-in-out underline-animation">
+          <Link to="/silence">Silence & Serenity</Link>
         </li>
       </ul>
       <motion.div

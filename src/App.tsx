@@ -1,11 +1,11 @@
-// All photos by Matt Perry https://citizenofnowhe.re
+
 import "./index.css";
 import * as React from "react";
 import { AnimatePresence } from "framer-motion";
 import { useLocation, useRoutes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Gallery } from "./template/Gallery";
-import { amsterdamPhotosMetadata, londonPhotosMetadata } from "./data";
+import { Gallery } from "./components/Gallery";
+import { cabinPhotosMetadata, coffeePhotosMetadata } from "./data";
 
 export default function App() {
   const element = useRoutes([
@@ -17,23 +17,21 @@ export default function App() {
       path: "/coffee",
       element: (
         <Gallery
-          photos={amsterdamPhotosMetadata}
+          photos={coffeePhotosMetadata}
           title="A Programmers Best Friend"
-          titleWidth={8.2}
           category="coffee"
           alt="Coffee"
         />
       )
     },
     {
-      path: "/london",
+      path: "/silence",
       element: (
         <Gallery
-          photos={londonPhotosMetadata}
-          title="White lines of Canary Wharf"
-          titleWidth={8}
-          category="canary"
-          alt="A building in Canary Wharf"
+          photos={cabinPhotosMetadata}
+          title="Silence & Serenity"
+          category="cabin"
+          alt="Cabin in the Woods"
         />
       )
     }
