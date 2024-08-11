@@ -20,7 +20,7 @@ export function Image({ alt, category, index, aspectRatio }: Props) {
   return (
     <section>
       <div ref={ref} style={{ aspectRatio }}>
-        <img src={`/${category}-${index}.jpg`} alt={alt} />
+        <img src={`/${category}-${index}.jpg`} alt={alt} className="photos"/>
       </div>
       <motion.h2 style={{ y }} className="number">{`#00${index}`}</motion.h2>
     </section>

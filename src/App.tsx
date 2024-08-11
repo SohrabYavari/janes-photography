@@ -6,12 +6,13 @@ import { useLocation, useRoutes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Gallery } from "./components/Gallery";
 import { cabinPhotosMetadata, coffeePhotosMetadata } from "./data";
+import About from "./components/About";
 
 export default function App() {
   const element = useRoutes([
     {
       path: "/",
-      element: <Home />
+      element: <About />
     },
     {
       path: "/coffee",
