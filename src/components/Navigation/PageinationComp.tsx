@@ -17,10 +17,10 @@ const PaginationComp = ({ previous, next }: Props) => {
       <Pagination>
         <PaginationContent className=" my-2 bg-secondary rounded-md">
           <PaginationItem>
-            <PaginationPrevious href={previous} className="hover:text-secondary cursor-pointer" />
+            <PaginationPrevious href={previous} className="cursor-pointer" />
           </PaginationItem>
           <PaginationItem>
-            <PaginationNext href={next} className="hover:text-secondary cursor-pointer" />
+            <PaginationNext href={next} className="cursor-pointer" />
           </PaginationItem>
         </PaginationContent>
       </Pagination>
