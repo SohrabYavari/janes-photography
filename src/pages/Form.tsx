@@ -11,7 +11,6 @@ import {
 
 // Image & Component Imports
 import profileImg from '../../src/assets/profilePhoto.jpg'
-import PageinationComp from "@/components/Navigation/PageinationComp";
 
 const Form = () => {
   return (
@@ -53,10 +52,6 @@ const Form = () => {
           <ContactForm />
         </div>
       </div>
-        <PageinationComp 
-          previous="/janes-photography/reception"
-          next="/janes-photography/"
-        />
     </>
   );
 };

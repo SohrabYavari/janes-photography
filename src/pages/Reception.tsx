@@ -4,19 +4,27 @@ import { useEffect, useState } from "react";
 // Component Imports
 import Fade from "@/components/framer-motion-comps/Fade";
 import BentoGrid from "@/components/BentoBoxes/BentoGrid";
-import PaginationComp from "@/components/Navigation/PageinationComp";
 import VerticalCarousel from "@/components/Carousel/VerticalCarousel";
 
 // Image Imports
+import reception1 from "/public/reception/reception-1.jpg";
+import reception2 from "/public/reception/reception-2.jpg";
+import reception3 from "/public/reception/reception-3.jpg";
+import reception4 from "/public/reception/reception-4.jpg";
+import reception5 from "/public/reception/reception-5.jpg";
+import reception6 from "/public/reception/reception-6.jpg";
+import reception7 from "/public/reception/reception-7.jpg";
+import reception8 from "/public/reception/reception-8.jpg";
+
 const ReceptionImages = [
-  "/public/reception/reception-1.jpg",
-  "/public/reception/reception-2.jpg",
-  "/public/reception/reception-3.jpg",
-  "/public/reception/reception-4.jpg",
-  "/public/reception/reception-5.jpg",
-  "/public/reception/reception-6.jpg",
-  "/public/reception/reception-7.jpg",
-  "/public/reception/reception-8.jpg",
+  reception1,
+  reception2,
+  reception3,
+  reception4,
+  reception5,
+  reception6,
+  reception7,
+  reception8,
 ];
 
 const Reception = () => {
@@ -52,7 +60,6 @@ const Reception = () => {
             <BentoGrid images={ReceptionImages} />
           )}
         </div>
-        <PaginationComp previous="/janes-photography/wedding" next="/janes-photography/form" />
       </div>
     </>
   );

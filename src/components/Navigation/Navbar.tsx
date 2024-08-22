@@ -14,9 +14,9 @@ import {
 } from "@/components/ui/navigation-menu";
 
 // Image Imports
-import proposalImage from "../../../public/proposals/proposal-8.jpg";
-import weddingImage from "../../../public/wedding/wedding-8.jpg";
-import ReceptionImage from "../../../public/reception/reception-8.jpg";
+import proposalImage from "/public/proposals/proposal-8.jpg";
+import weddingImage from "/public/wedding/wedding-8.jpg";
+import ReceptionImage from "/public/reception/reception-8.jpg";
 
 export function Navbar() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);

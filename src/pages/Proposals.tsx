@@ -1,25 +1,33 @@
-// React Import 
+// React Import
 import { useEffect, useState } from "react";
 
-// framer-motion Import 
+// framer-motion Import
 import { motion, useIsPresent } from "framer-motion";
 
 // Component Imports
 import BentoGrid from "@/components/BentoBoxes/BentoGrid";
 import VerticalCarousel from "@/components/Carousel/VerticalCarousel";
 import Fade from "@/components/framer-motion-comps/Fade";
-import PaginationComp from "@/components/Navigation/PageinationComp";
 
 // Image Imports
+import proposal1 from "/public/proposals/proposal-1.jpg";
+import proposal2 from "/public/proposals/proposal-2.jpg";
+import proposal3 from "/public/proposals/proposal-3.jpg";
+import proposal4 from "/public/proposals/proposal-4.jpg";
+import proposal5 from "/public/proposals/proposal-5.jpg";
+import proposal6 from "/public/proposals/proposal-6.jpg";
+import proposal7 from "/public/proposals/proposal-7.jpg";
+import proposal8 from "/public/proposals/proposal-8.jpg";
+
 const ProposalImages = [
-  "/public/proposals/proposal-1.jpg",
-  "/public/proposals/proposal-2.jpg",
-  "/public/proposals/proposal-3.jpg",
-  "/public/proposals/proposal-4.jpg",
-  "/public/proposals/proposal-5.jpg",
-  "/public/proposals/proposal-6.jpg",
-  "/public/proposals/proposal-7.jpg",
-  "/public/proposals/proposal-8.jpg",
+  proposal1,
+  proposal2,
+  proposal3,
+  proposal4,
+  proposal5,
+  proposal6,
+  proposal7,
+  proposal8,
 ];
 
 const Proposals = () => {
@@ -69,7 +77,6 @@ const Proposals = () => {
           className="privacy-screen"
         />
 
-        <PaginationComp previous="/janes-photography/" next="/janes-photography/wedding" />
       </div>
     </>
   );
