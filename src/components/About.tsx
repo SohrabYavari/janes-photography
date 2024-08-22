@@ -1,8 +1,13 @@
-import profileImage from "../assets/profilePhoto.jpg";
+// ShadcnUI Imports
+import { Card, CardContent } from "./ui/card";
+
+// Component Imports
 import Fade from "./framer-motion-comps/Fade";
 import Scale from "./framer-motion-comps/Scale";
 import Camera from "./SvgComps/Camera";
-import { Card, CardContent } from "./ui/card";
+
+// Image Imports
+import profileImage from "../assets/profilePhoto.jpg";
 
 const About = () => {
   return (

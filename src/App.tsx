@@ -1,52 +1,42 @@
-import "./index.css";
+// React Imports
 import * as React from "react";
-import { AnimatePresence } from "framer-motion";
 import { useLocation, useRoutes } from "react-router-dom";
-import Form from "./pages/Form";
+
+// framer-motion
+import { AnimatePresence } from "framer-motion";
+
+// Component Imports
+import Home from "./pages/Home";
 import Proposals from "./pages/Proposals";
 import Wedding from "./pages/Wedding";
 import Reception from "./pages/Reception";
-import Home from "./pages/Home";
-import VerticalCarousel from "./components/Carousel/VerticalCarousel";
+import Form from "./pages/Form";
 
-const ProposalImages = [
-  "/public/proposals/proposal-1.jpg",
-  "/public/proposals/proposal-2.jpg",
-  "/public/proposals/proposal-3.jpg",
-  "/public/proposals/proposal-4.jpg",
-  "/public/proposals/proposal-5.jpg",
-  "/public/proposals/proposal-6.jpg",
-  "/public/proposals/proposal-7.jpg",
-  "/public/proposals/proposal-8.jpg",
-];
+// Styles
+import "./index.css";
 
 export default function App() {
   const element = useRoutes([
     {
-      path: "/",
+      path: "/janes-photography/",
       element: <Home />,
     },
     {
-      path: "/proposal",
+      path: "/janes-photography/proposal",
       element: <Proposals />,
     },
     {
-      path: "/reception",
+      path: "/janes-photography/reception",
       element: <Reception />,
     },
     {
-      path: "/wedding",
+      path: "/janes-photography/wedding",
       element: <Wedding />,
     },
     {
-      path: "/form",
+      path: "/janes-photography/form",
       element: <Form />,
     },
-    {
-      path: "/test",
-      element: <VerticalCarousel images={ProposalImages}/>,
-    },
-
   ]);
 
   const location = useLocation();

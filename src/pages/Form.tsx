@@ -1,3 +1,4 @@
+// ShadcnUI Import
 import ContactForm from "@/components/Contact/ContactForm";
 import {
   Card,
@@ -8,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+// Image & Component Imports
 import profileImg from '../../src/assets/profilePhoto.jpg'
 import PageinationComp from "@/components/Navigation/PageinationComp";
 
@@ -52,8 +54,8 @@ const Form = () => {
         </div>
       </div>
         <PageinationComp 
-          previous="/reception"
-          next="/"
+          previous="/janes-photography/reception"
+          next="/janes-photography/"
         />
     </>
   );

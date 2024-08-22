@@ -1,4 +1,7 @@
+// React Imports
 import React from "react";
+
+// ShadcnUI Imports
 import {
   Accordion,
   AccordionContent,
@@ -17,7 +20,7 @@ interface PricingCardProps {
     listItem3: string;
     listItem4?: string;
     listItem5?: string;
-    price: string; // If price is a string, make sure it's defined as a string here
+    price: string;
   };
   isSelected: boolean;
   onCardClick: (id: number) => void;

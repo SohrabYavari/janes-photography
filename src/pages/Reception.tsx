@@ -1,9 +1,13 @@
-import BentoGrid from "@/components/BentoBoxes/BentoGrid";
-import VerticalCarousel from "@/components/Carousel/VerticalCarousel";
-import Fade from "@/components/framer-motion-comps/Fade";
-import PaginationComp from "@/components/Navigation/PageinationComp";
+// React Imports
 import { useEffect, useState } from "react";
 
+// Component Imports
+import Fade from "@/components/framer-motion-comps/Fade";
+import BentoGrid from "@/components/BentoBoxes/BentoGrid";
+import PaginationComp from "@/components/Navigation/PageinationComp";
+import VerticalCarousel from "@/components/Carousel/VerticalCarousel";
+
+// Image Imports
 const ReceptionImages = [
   "/public/reception/reception-1.jpg",
   "/public/reception/reception-2.jpg",
@@ -23,13 +27,9 @@ const Reception = () => {
       setIsSmallScreen(window.innerWidth < 500);
     };
 
-    // Initial check
     handleResize();
-
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -52,7 +52,7 @@ const Reception = () => {
             <BentoGrid images={ReceptionImages} />
           )}
         </div>
-        <PaginationComp previous="/wedding" next="/form" />
+        <PaginationComp previous="/janes-photography/wedding" next="/janes-photography/form" />
       </div>
     </>
   );

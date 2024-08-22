@@ -1,5 +1,5 @@
-import { motion, useIsPresent } from "framer-motion";
 import { Link } from "react-router-dom";
+import { motion, useIsPresent } from "framer-motion";
 import "./Navigation.css";
 
 interface Props {

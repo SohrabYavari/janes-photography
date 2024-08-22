@@ -1,9 +1,13 @@
-import BentoGrid from "@/components/BentoBoxes/BentoGrid";
-import VerticalCarousel from "@/components/Carousel/VerticalCarousel";
-import Fade from "@/components/framer-motion-comps/Fade";
-import PaginationComp from "@/components/Navigation/PageinationComp";
+// React Imports
 import { useEffect, useState } from "react";
 
+// Component Imports
+import Fade from "@/components/framer-motion-comps/Fade";
+import BentoGrid from "@/components/BentoBoxes/BentoGrid";
+import PaginationComp from "@/components/Navigation/PageinationComp";
+import VerticalCarousel from "@/components/Carousel/VerticalCarousel";
+
+// Images Import 
 const WeddingImages = [
   "/public/wedding/wedding-1.jpg",
   "/public/wedding/wedding-2.jpg",
@@ -23,13 +27,9 @@ const Wedding = () => {
       setIsSmallScreen(window.innerWidth < 500);
     };
 
-    // Initial check
     handleResize();
-
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -51,7 +51,7 @@ const Wedding = () => {
             <BentoGrid images={WeddingImages} />
           )}
         </div>
-        <PaginationComp previous="/proposal" next="/reception" />
+        <PaginationComp previous="/janes-photography/proposal" next="/janes-photography/reception" />
       </div>
     </>
   );

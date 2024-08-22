@@ -1,10 +1,16 @@
+// React Import 
+import { useEffect, useState } from "react";
+
+// framer-motion Import 
+import { motion, useIsPresent } from "framer-motion";
+
+// Component Imports
 import BentoGrid from "@/components/BentoBoxes/BentoGrid";
 import VerticalCarousel from "@/components/Carousel/VerticalCarousel";
 import Fade from "@/components/framer-motion-comps/Fade";
 import PaginationComp from "@/components/Navigation/PageinationComp";
-import { motion, useIsPresent } from "framer-motion";
-import { useEffect, useState } from "react";
 
+// Image Imports
 const ProposalImages = [
   "/public/proposals/proposal-1.jpg",
   "/public/proposals/proposal-2.jpg",
@@ -24,13 +30,9 @@ const Proposals = () => {
       setIsSmallScreen(window.innerWidth < 500);
     };
 
-    // Initial check
     handleResize();
-
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -67,7 +69,7 @@ const Proposals = () => {
           className="privacy-screen"
         />
 
-        <PaginationComp previous="/" next="/wedding" />
+        <PaginationComp previous="/janes-photography/" next="/janes-photography/wedding" />
       </div>
     </>
   );
