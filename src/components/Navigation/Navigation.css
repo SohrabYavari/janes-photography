@@ -1,0 +1,29 @@
+.socialMediaIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.mediaLink {
+  display: block;
+  padding: 0;
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+.mediaLink svg {
+  margin: 0px 0px 1px;
+  overflow: hidden;
+  fill: #fff;
+  transition: 100ms;
+}
+svg:hover {
+  fill: #2d5f61;
+}
+
+.mediaLink:hover {
+  cursor: pointer;
+}
