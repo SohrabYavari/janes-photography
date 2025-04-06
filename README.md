@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Jane's Photography
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive photography portfolio website built with modern frontend technologies.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project showcases a professional photography portfolio with a clean, elegant UI and smooth user experience. The site features image galleries, photographer information, and contact options.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Image Galleries**: Categorized photo collections with optimized loading
+- **Responsive Design**: Seamless experience across all device sizes
+- **Modern UI**: Clean, minimalist interface highlighting the photography
+- **Contact Form**: Integrated inquiry submission
+- **Smooth Animations**: Subtle transitions and effects enhancing user experience
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Framework**: React
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **UI Components**: shadcn/ui
+- **Deployment**: GitHub Pages
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Live Demo
+
+Visit the site: [Jane's Photography](https://sohrabyavari.github.io/janes-photography/)
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+
+## Design Principles
+
+This project emphasizes:
+- Typography and whitespace to showcase photography
+- Type safety with TypeScript
+- Component reusability with shadcn/ui
+
+---
+
+Designed and developed by [Sohrab Yavari](https://github.com/sohrabyavari) as a personal project to develop my frontend skills. 
